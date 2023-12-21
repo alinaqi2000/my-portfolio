@@ -8,22 +8,24 @@ seo:
 
 
 ---personal_info
-name: CARL HANSON
+name: Ali Naqi Al-Musawi
 images:
   - src: /about.jpg
     alt: my image
 ---
 ##### <span>01.</span> About me
 
-Lorem consequat reprehenderit ipsum nulla qui pariatur tempor officia ad. Excepteur excepteur pariatur ad laborum labore reprehenderit. Do eiusmod sit pariatur nisi. Quis non dolor amet magna eu adipisicing est ex.
+I am a highly motivated and results-oriented software developer with a strong work ethic. I am always looking for new challenges and opportunities to learn and grow. I am confident that I can make a significant contribution to your team.
 
-##### <span>02.</span> Interests and Hobbies
+##### <span>02.</span> Availability
 
-Ad Lorem et amet exercitation enim culpa nulla laboris eu eiusmod. Irure fugiat sunt esse consequat consectetur eu laboris voluptate eiusmod dolor. Nisi velit consectetur deserunt esse aliquip esse officia consequat eiusmod voluptate cupidatat id.
+I am available for full-time or contract work. Please contact me if you are interested in discussing my qualifications in more detail.
 
-##### <span>03.</span> Framework Preferences
+##### <span>03.</span> Command on Languages
 
-Ullamco cillum pariatur qui eu. Aliqua quis in adipisicing nulla do. Reprehenderit cupidatat eiusmod cupidatat ut ipsum pariatur Lorem incididunt. Veniam sunt reprehenderit consectetur ullamco laborum magna sit aliquip minim esse.
+HTML, CSS, JS, Bootstrap, Tailwind CSS, jQuery, AJAX, Redux, Webpack, Vite<br/>
+Django, NodeJS, ExpressJS, MySQL, MongoDB<br/>
+Laravel, CodeIgniter, ReactJS, NextJS, Angular, VueJS, Ionic, React Native, Flutter<br/>
 
 
 
@@ -42,86 +44,142 @@ Let's super-charge your business today!
 ---skills_header
 title: I'm Specialized in
 list:
-  - Front-End Design
-  - Back-End Development
   - Modern Frameworks
+  - Frontend Design
+  - Backend Dev
 ---
 
 
 
 ---skills[0]
-title: Back-End Development
+title: Frameworks
 list:
-  - title: Node.js
-    level: 1
+  - title: Laravel
+    level: 4
     icon:
       src: /icons/nodedotjs.svg
-  - title: MySQL
-    level: 3
+  - title: CodeIgniter
+    level: 4
     icon:
       src: /icons/prisma.svg
-  - title: Svelte
+  - title: ReactJS
     level: 4
     icon:
       src: /icons/svelte.svg
-  - title: HTML5
-    level: 5
+  - title: NextJS
+    level: 4
     icon:
       src: /icons/html5.svg
-  - title: Solidity
-    level: 2
+  - title: Angular
+    level: 4
+    icon:
+      src: /icons/solidity.svg
+  - title: VueJS
+    level: 4
+    icon:
+      src: /icons/solidity.svg
+  - title: Ionic
+    level: 4
+    icon:
+      src: /icons/solidity.svg
+  - title: React Native
+    level: 3
+    icon:
+      src: /icons/solidity.svg
+  - title: Flutter
+    level: 3
+    icon:
+      src: /icons/solidity.svg
+---
+
+
+---skills[1]
+title: Back-End Development
+list:
+  - title: Node.js
+    level: 3
+    icon:
+      src: /icons/nodedotjs.svg
+  - title: Express js
+    level: 3
+    icon:
+      src: /icons/prisma.svg
+  - title: MySQL
+    level: 4
+    icon:
+      src: /icons/svelte.svg
+  - title: Django
+    level: 3
+    icon:
+      src: /icons/html5.svg
+  - title: MongoDB
+    level: 3
     icon:
       src: /icons/solidity.svg
 ---
 
 
 
----skills[1]
+---skills[2]
 ########################################
 ### Skills
 ########################################
-title: Front-End UI/UX Design
+title: Front-End
 list:
+  - title: HTML
+    level: 5
+    icon:
+      src: /icons/javascript.svg
+  - title: CSS
+    level: 5
+    icon:
+      src: /icons/react.svg
   - title: JavaScript
     level: 4
     icon:
-      src: /icons/javascript.svg
-  - title: React
-    level: 3
-    icon:
-      src: /icons/react.svg
-  - title: Redux
-    level: 4
-    icon:
       src: /icons/redux.svg
-  - title: GraphQL
-    level: 2
+  - title: Bootstrap
+    level: 4
     icon:
       src: /icons/graphql.svg
-  - title: Node.js
-    level: 4
+  - title: Tailwind CSS
+    level: 5
     icon:
       src: /icons/nodedotjs.svg
-  - title: Prisma
-    level: 5
+  - title: jQuery
+    level: 4
+    icon:
+      src: /icons/prisma.svg
+  - title: AJAX
+    level: 3
+    icon:
+      src: /icons/prisma.svg
+  - title: Redux
+    level: 3
+    icon:
+      src: /icons/prisma.svg
+  - title: Webpack
+    level: 3
+    icon:
+      src: /icons/prisma.svg
+  - title: vite
+    level: 3
     icon:
       src: /icons/prisma.svg
 ---
 
 
 
+
 ---history[0]
 title: Employment
 list:
-  - name: MetaVerse Inc.
-    description: Web3 Developer
-    date: 2020-Present
-  - name: Vircil Intl Co..
-    description: Back-End Developer and Designer
-    date: 2018-2020
-  - name: Crowdcube Inc.
-    description: Technical Support
-    date: 2018-2015
+  - name: Zairone Solutions
+    description: Full Stack Software Engineer
+    date: May 2019 - Present
+  - name: iBuildSoft
+    description: Full Stack Web Developer
+    date: Mar 2016 - May 2019
 ---
 
 
@@ -129,13 +187,10 @@ list:
 ---history[1]
 title: Education
 list:
-  - name: Stanford university
-    description: MSc (Computer Science)
-    date: 2006-2010
-  - name: University of Los Angeles
-    description: MSc (Human Computer Interaction)
-    date: 2010-2014
-  - name: Berkeley University
-    description: MSc (Information Technology)
-    date: 2015-2019
+  - name: The University of Lahore
+    description: Bachelor of Software Engineering (BS.SE)
+    date: 2019 - 2023
+  - name: Punjab Group Of Colleges
+    description: F.Sc Pre-Engineering
+    date: 2016 - 2018
 ---

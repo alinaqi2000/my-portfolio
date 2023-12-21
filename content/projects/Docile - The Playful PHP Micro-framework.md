@@ -1,14 +1,14 @@
 ---
 layout: Post
-title: Crypto website development for DeFi X
-description: The Time Traveller (for so it will be convenient to speak of him) was expounding a recondite matter to us.
+title: Docile - The Playful PHP Micro-framework
+description: Docile is a charming and lightweight PHP microframework designed to bring simplicity and joy to your web applications and APIs.
 date: '2022-11-22'
 tags:
-  - next-js
-  - stripe
-  - shopify
+  - Php
+  - twing
+  # - micro-framework
 logo:
-  src: /icons/logo-3.svg
+  src: /icons/php-logo.png
   alt: Company X
 images:
   - src: /projects/project-3.png
@@ -35,7 +35,7 @@ attributes:
     value: GRaphQL
 ---
 
-Markdown is a lightweight markup language that you can use to add formatting elements to plaintext text documents. Using Markdown is different than using a WYSIWYG editor. In an application like Microsoft Word, you click buttons to format words and phrases, and the changes are visible immediately. Markdown isn’t like that. When you create a Markdown-formatted file, you add Markdown syntax to the text to indicate which words and phrases should look different.
+Docile is a charming and lightweight PHP microframework designed to bring simplicity and joy to your web applications and APIs. It embraces a delightful balance between power and simplicity, making it the perfect choice for small-scale PHP projects.
 
 ### Paragraphs
 

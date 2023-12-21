@@ -1,14 +1,14 @@
 ---
 layout: Post
-title: Brand refresh for saas cloud platform application
-description: The Time Traveller (for so it will be convenient to speak of him) was expounding a recondite matter to us.
+title: SpotCheck - Location Tracking App
+description: SpotCheck is a powerful location tracking app designed to help users automate their phone's settings based on their current location.
 date: '2022-11-21'
 tags:
-  - next-js
-  - tailwindcss
-  - graphql
+  - dart
+  - flutter
+  # - SpotCheck
 logo:
-  src: /icons/logo-2.svg
+  src: /icons/spotCheck-logo.png
   alt: Company X
 images:
   - src: /projects/project-2.png
@@ -25,7 +25,7 @@ attributes:
     value: Admin Panel Design
 ---
 
-Markdown is a lightweight markup language that you can use to add formatting elements to plaintext text documents. Using Markdown is different than using a WYSIWYG editor. In an application like Microsoft Word, you click buttons to format words and phrases, and the changes are visible immediately. Markdown isn’t like that. When you create a Markdown-formatted file, you add Markdown syntax to the text to indicate which words and phrases should look different.
+SpotCheck is a powerful location tracking app designed to help users automate their phone's settings based on their current location. With SpotCheck, users can easily specify locations and define actions to be performed when they enter or exit those locations. The app sends notifications to users when the specified actions are triggered, providing a seamless and personalized mobile experience.
 
 ### Paragraphs
 

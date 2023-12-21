@@ -1,31 +1,31 @@
 ---
 layout: Post
-title: Application design for finance startup
-description: The Time Traveller (for so it will be convenient to speak of him) was expounding a recondite matter to us.
+title: Expense Tracker API with Spring Boot
+description: This API allows users to track and visualize their expenses through an expense chart, providing insights into the trends of increasing or decreasing expenses over time.
 date: '2022-11-21'
 tags:
-  - svelte
-  - tailwindcss
-  - prisma
+  - java
+  - Maven
+  - MySQL
 logo:
-  src: /icons/logo-4.svg
+  src: /icons/java-logo.png
   alt: Company X
 images:
-  - src: /projects/project-4.png
+  - src: /projects/project-1.png
     alt: image alt text
     overlay:
-      src: /projects/project-4-mobile.png
+      src: /projects/project-1-mobile.png
       alt: overlay image
-  - src: /projects/project-4.png
+  - src: /projects/project-2.png
     alt: image alt text
 attributes:
   - label: Duration
-    value: 6 months
+    value: 3 Months
   - label: Role
-    value: Accessibility
+    value: GraphQL Database
 ---
 
-Markdown is a lightweight markup language that you can use to add formatting elements to plaintext text documents. Using Markdown is different than using a WYSIWYG editor. In an application like Microsoft Word, you click buttons to format words and phrases, and the changes are visible immediately. Markdown isn’t like that. When you create a Markdown-formatted file, you add Markdown syntax to the text to indicate which words and phrases should look different.
+The Expense Tracker API is a Java-based REST API developed using the Spring Boot framework. This API allows users to track and visualize their expenses through an expense chart, providing insights into the trends of increasing or decreasing expenses over time.
 
 ### Paragraphs
 

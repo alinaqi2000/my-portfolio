@@ -1,31 +1,31 @@
 ---
 layout: Post
-title: Agency website design for devops company
-description: Lorem ipsum dolor sit amet consectetur adipiscing elit mattis faucibus odio feugiat arcu scelerisque drogon sit amenot.
+title: QuickPaisa - QR Payment App
+description: With QuickPaisa, users can easily make payments to brands by scanning their unique QR codes, eliminating the need for cash or card transactions.
 date: '2022-11-21'
 tags:
-  - next-js
-  - mdx
-  - react
+  - Dart
+  - Flutter
+  # - prisma
 logo:
-  src: /icons/logo-1.svg
+  src: /icons/quickpaisa-logo-with-name.png
   alt: Company X
 images:
-  - src: /projects/project-1.png
+  - src: /projects/project-4.png
     alt: image alt text
     overlay:
-      src: /projects/project-1-mobile.png
+      src: /projects/project-4-mobile.png
       alt: overlay image
-  - src: /projects/project-2.png
+  - src: /projects/project-4.png
     alt: image alt text
 attributes:
   - label: Duration
-    value: 3 Months
+    value: 6 months
   - label: Role
-    value: GraphQL Database
+    value: Accessibility
 ---
 
-Markdown is a lightweight markup language that you can use to add formatting elements to plaintext text documents. Using Markdown is different than using a WYSIWYG editor. In an application like Microsoft Word, you click buttons to format words and phrases, and the changes are visible immediately. Markdown isn’t like that. When you create a Markdown-formatted file, you add Markdown syntax to the text to indicate which words and phrases should look different.
+QuickPaisa is a QR payment app that provides a convenient and secure way for users to transfer and receive money using QR codes. With QuickPaisa, users can easily make payments to brands by scanning their unique QR codes, eliminating the need for cash or card transactions. The app aims to streamline the payment process and enhance the user experience by leveraging QR code technology.
 
 ### Paragraphs
 

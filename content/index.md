@@ -1,7 +1,7 @@
 ---
 layout: Home
 seo:
-  title: Web Developer
+  title: Software Engineer
   description: Custom description for this page goes here
 ---
 
@@ -13,17 +13,13 @@ images:
     alt: my photo
 ---
 
-# <Typewriter>Ali Naqi Al-Musawi</Typewriter>
+# <Typewriter className="hero-name">Ali Naqi Al-Musawi</Typewriter>
 
-# *Web Developer* <span>&</span> *Growth Consultant*
+# *Software Engineer*
 
 <Sep size={12} />
 
-Sometimes five Imprimaturs are seen together dialogue-wise in the
-piazza of one title-page, complimenting and ducking each to other with
-their shaven reverences, whether the author, who stands by in
-perplexity at the foot of his epistle, shall to the press or to the
-sponge.
+Crafting digital dreams into reality! As a passionate Software Developer, I blend innovation with expertise in Laravel, Angular, ReactJS, and more. From web applications to analytics, I'm your go-to architect for user-friendly solutions. Let's turn challenges into triumphs together!
 
 
 
@@ -40,7 +36,7 @@ sponge.
 
 ---cta
 ---
-<Button href="/contact" size="lg">
+<Button href="/cv/Ali_Ruseme_1-1.pdf" size="lg">
   Download Resume
 </Button>
 
@@ -51,7 +47,7 @@ title: Trusted By
 list:
   - name: Company 1
     icon:
-      src: /icons/logo-1.svg
+      src: /icons/zairon.png
   - name: Company 2
     icon:
       src: /icons/logo-3.svg

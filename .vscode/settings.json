@@ -5,5 +5,8 @@
 		"className",
 		"ngClass",
 		"classNameInView"
-	]
+	],
+	"[markdown]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	}
 }

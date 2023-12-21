@@ -59,3 +59,11 @@
     }
   }
 }
+.hero-name {
+  font-size: 28px;
+}
+@media only screen and (min-width: 700px) {
+  .hero-name {
+    font-size: 44px;
+  }
+}
