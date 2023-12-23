@@ -36,7 +36,7 @@ Crafting digital dreams into reality! As a passionate Software Developer, I blen
 
 ---cta
 ---
-<Button href="/cv/Ali_Ruseme_1-1.pdf" size="lg">
+<Button download="Ali_Resume" target="_blank" href="/cv/Ali_Resume.pdf" size="lg">
   Download Resume
 </Button>
 

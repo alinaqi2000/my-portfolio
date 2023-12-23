@@ -50,8 +50,8 @@
       },
       {
         "type": "checkbox",
-        "name": "project-type[App Development]",
-        "label": "App Development"
+        "name": "project-type[Mobile App Development]",
+        "label": "Mobile App Development"
       },
       {
         "type": "checkbox",

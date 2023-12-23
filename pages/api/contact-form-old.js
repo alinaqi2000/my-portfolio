@@ -3,8 +3,10 @@
  * will be treated as an API endpoint instead of a page.        *
  ****************************************************************/
 
+import sendgrid from '@sendgrid/mail'
 import { config } from '../../theme.config'
-import nodemailer from 'nodemailer'
+
+sendgrid.setApiKey(process.env.SENDGRID_API_KEY)
 
 const contact = async (req, res) => {
   const { email } = req.body
@@ -51,26 +53,18 @@ const contact = async (req, res) => {
   }
 
   try {
-    const transporter = nodemailer.createTransport({
-      host: 'mail.zairone.com',
-      port: 465,
-      secure: true,
-      auth: {
-        user: 'ali@zairone.com',
-        pass: 'F]7kFJ,}CCT,',
-      },
-    })
-    const info = await transporter.sendMail({
-      to: recipient,
-      from: sender,
+    await sendgrid.send({
+      to: recipient, // Your email where you'll receive emails
+      from: recipient, // your website email address here
       replyTo: email,
       subject: req.body.subject || subject || 'Contact form entry',
       html,
     })
-    return res.status(200).json({ error: '', info })
   } catch (error) {
     return res.status(error.statusCode || 500).json({ error: error.message })
   }
+
+  return res.status(200).json({ error: '' })
 }
 
 export default contact

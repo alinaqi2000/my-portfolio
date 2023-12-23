@@ -6,14 +6,15 @@
  * Icons from react-icons: https://react-icons.github.io/react-icons
  */
 
-import { IoLogoTwitter, IoLogoInstagram, IoLogoLinkedin } from 'react-icons/io5'
+import { IoLogoTwitter, IoLogoInstagram, IoLogoGithub, IoLogoLinkedin } from 'react-icons/io5'
 import { TfiHome, TfiPencilAlt } from 'react-icons/tfi'
 import { SlUser, SlBriefcase, SlEnvolope, SlTrophy } from 'react-icons/sl'
 
 /**
  * Main Menu Items
  */
-
+const SITE_URL =
+  process.env.NEXT_PUBLIC_SITE_URL || process.env.VERCEL_URL || 'http://localhost:3000'
 export const menu = [
   {
     name: 'Home',
@@ -49,11 +50,11 @@ export const menu = [
     slug: '/services',
     Icon: SlBriefcase,
   },
-  {
-    name: 'Articles',
-    slug: '/blog',
-    Icon: TfiPencilAlt,
-  },
+  // {
+  //   name: 'Articles',
+  //   slug: '/blog',
+  //   Icon: TfiPencilAlt,
+  // },
   {
     name: 'Projects',
     slug: '/projects',
@@ -72,19 +73,24 @@ export const menu = [
 
 export const social = [
   {
+    name: 'GitHub',
+    url: 'https://github.com/alinaqi2000',
+    Icon: IoLogoGithub,
+  },
+  {
     name: 'Twitter',
     url: 'https://twitter.com/AliNaqi2000',
     Icon: IoLogoTwitter,
   },
   {
-    name: 'Instagram',
-    url: 'https://www.instagram.com/alinaqi2000/',
-    Icon: IoLogoInstagram,
-  },
-  {
     name: 'LinkedIn',
     url: 'https://www.linkedin.com/in/ali-naqi-al-musawi/',
     Icon: IoLogoLinkedin,
+  },
+  {
+    name: 'Instagram',
+    url: 'https://www.instagram.com/alinaqi2000/',
+    Icon: IoLogoInstagram,
   },
 ]
 
@@ -106,9 +112,9 @@ export const config = {
   },
   contactForm: {
     inputs: require('./content/contact-form.json'),
-    recipient: 'RECIPIENT@EXAMPLE.com',
-    sender: 'SENDER@EXAMPLE.com',
-    subject: 'EMAIL NOTIFICATION SUBJECT',
+    recipient: 'alinaqi2000@gmail.com',
+    sender: 'ali@zairone.com',
+    subject: 'Contact Message - ' + process.env.NEXT_DOAMIN,
   },
 }
 
@@ -131,16 +137,17 @@ export const mdxConfig = {
  */
 
 export const siteMetaData = {
-  siteUrl: process.env.NEXT_PUBLIC_SITE_URL || process.env.VERCEL_URL || 'http://localhost:3000',
+  siteUrl: SITE_URL,
   authorName: 'Ali Naqi',
   siteName: 'Ali Naqi',
   defaultTitle: 'Ali Naqi Personal Site',
   titleTemplate: 'Ali Naqi | %s',
-  description: "Empower your digital journey with a skilled Software Developer. Expert in Laravel, Angular, ReactJS, and more. Elevate your web and mobile experience. Unleash innovation for impactful results. Let's build success together!",
+  description:
+    "Empower your digital journey with a skilled Software Developer. Expert in Laravel, Angular, ReactJS, and more. Elevate your web and mobile experience. Unleash innovation for impactful results. Let's build success together!",
   email: 'alinaqi2000@gmail.com',
   locale: 'en_US',
   twitter: {
-    handle: '@handle',
+    handle: '@AliNaqi2000',
     site: '@site',
     cardType: 'summary_large_image',
   },

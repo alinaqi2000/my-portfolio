@@ -7,9 +7,10 @@ seo:
 
 ---github
 repositories:
-  - leerob/leerob.io
-  - jxnblk/mdx-deck
-  - vercel/og-image
+  - alinaqi2000/docile
+  - alinaqi2000/Expenses-App-Java-Spring
+  - alinaqi2000/spot_check
+  - alinaqi2000/quickpaisa-app
 ---
 
 <PageTitle>

@@ -27,11 +27,6 @@ Et tempor non mollit dolor et do aute voluptate ea ullamco.
 - Web and Mobile App Design
 - Front-end Development
 
-###### Applications I'm fluent in
-
-- Back-end Development
-- Web and Mobile App Design
-- Front-end Development
 
 <Sep size="12" />
 
