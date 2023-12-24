@@ -29,7 +29,7 @@ Crafting digital dreams into reality! As a passionate Software Developer, I blen
 - number: 100+
   text: Projects Completed
 - number: 6
-  text: OpenSource Libraries
+  text: OpenSource Projects
 ---
 
 

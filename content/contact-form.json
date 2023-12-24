@@ -60,18 +60,18 @@
       },
       {
         "type": "checkbox",
-        "name": "project-type[Front-end Development]",
-        "label": "Front-end Development"
-      },
-      {
-        "type": "checkbox",
         "name": "project-type[E-commerce Site]",
         "label": "E-commerce Site"
       },
       {
         "type": "checkbox",
-        "name": "project-type[Search Engine Optimization]",
-        "label": "Search Engine Optimization"
+        "name": "project-type[Social Media / SEO]",
+        "label": "Social Media / SEO"
+      },
+      {
+        "type": "checkbox",
+        "name": "project-type[Other]",
+        "label": "Other"
       }
     ]
   },

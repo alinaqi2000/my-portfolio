@@ -18,14 +18,14 @@ seo:
 
 ###### Solving problems
 
-I design products that are more than pretty. I make them shippable and usable.
-Et tempor non mollit dolor et do aute voluptate ea ullamco.
+Elevate your brand with my comprehensive suite of services, from cutting-edge graphic design to seamless website and app development and all backed by strategic digital marketing for unparalleled online success.
 
 ###### What you can expect
 
-- Back-end Development
 - Web and Mobile App Design
+- Back-end Development
 - Front-end Development
+- Digital Marketing & SEO
 
 
 <Sep size="12" />
@@ -39,32 +39,32 @@ Et tempor non mollit dolor et do aute voluptate ea ullamco.
 ---services[0]
 title: Graphic Designing
 icon:
-  src: /icons/prisma.svg
+  src: /icons/figma.svg
 ---
 
 <small>
-  Our professional graphic designers can provide you with high-quality graphic design and branding. We provide businesses and brands in the market with quality graphic design services.
+  I wear many hats, and graphic design is one of my favorites. I help businesses and brands shine with high-quality visual identities. Think:
 
-    - <strong>Back-end Development</strong>
-    - <strong>Web and Mobile App Design</strong>
-    - <strong>Front-end Development</strong>
+    - <strong>Logo & Brand Design</strong>
+    - <strong>Marketing Materials</strong>
+    - <strong>Website & App UI/UX Design</strong>
 
 </small>
 
 
 
 ---services[1]
-title: Creative Website Designing
+title: Website Designing
 icon:
   src: /icons/prisma.svg
 ---
 
 <small>
-  As a leading website design company, our innovative and rigorous design processes are aimed at achieving your objectives.
+  I build beautiful and functional websites that not only look amazing but also achieve your online goals. Here's what I can do:
 
-    - <strong>Back-end Development</strong>
-    - <strong>Web and Mobile App Design </strong>
-    - <strong>Front-end Development</strong>
+    - <strong>Custom Website Design</strong>
+    - <strong>E-commerce Development</strong>
+    - <strong>CMS Integration</strong>
 
 </small>
 
@@ -77,11 +77,11 @@ icon:
 ---
 
 <small>
-  Zairone has been regarded as one of the best web development firms. Our team can handle everything from simple designs to complicated functionalities.
+  From simple sites to complex functionalities, I'm your one-stop shop for website development. My skills include:
 
-    - <strong>Back-end Development</strong>
-    - <strong>Web and Mobile App Design</strong>
-    - <strong>Front-end Development</strong>
+    - <strong>Back-End Development</strong>
+    - <strong>Front-End Development</strong>
+    - <strong>Custom Web Applications</strong>
 </small>
 
 
@@ -93,11 +93,12 @@ icon:
 ---
 
 <small>
-  We are one of the best mobile app development companies in the world, whether you need a hybrid or native Android or iOS app. Zairone Solutions has a brilliant team of top app developers on board.
+  Native iOS or Android app? No problem! I'm skilled in both, and I can create:
 
-  - <strong>Back-end Development </strong>
-  - <strong>Web and Mobile App Design </strong>
-  - <strong>Front-end Development</strong>
+
+  - <strong>Native App Development</strong>
+  - <strong>Hybrid App Development</strong>
+  - <strong>Mobile App Design & UI/UX</strong>
 </small>
 
 
@@ -105,29 +106,13 @@ icon:
 ---services[4]
 title: Digital Marketing
 icon:
-  src: /icons/audit.svg
+  src: /icons/socialblade.svg
 ---
 
 <small>
-  We are a proper social media agency, and our social media consultants can assist you in defining your social marketing goals and identifying your target audience.
+  Let's team up to connect you with your target audience and achieve your digital goals. I offer:
 
-  - <strong>Back-end Development </strong>
-  - <strong>Web and Mobile App Design </strong>
-  - <strong>Front-end Development</strong>
-</small>
-
-
-
----services[5]
-title: Search Engine Optimization
-icon:
-  src: /icons/audit.svg
----
-
-<small>
-  Search Engine Optimization (SEO) is vital and necessary, and our SEO strategies will help your business get a high ranking in the search results.
-
-  - <strong>Back-end Development </strong>
-  - <strong>Web and Mobile App Design </strong>
-  - <strong>Front-end Development</strong>
+  - <strong>Social Media Marketing</strong>
+  - <strong>Paid Advertising</strong>
+  - <strong>SEO</strong>
 </small>
