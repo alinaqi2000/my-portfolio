@@ -50,43 +50,43 @@ list:
 - title: Laravel
   level: 4
   icon:
-  src: /icons/laravel.svg
+    src: /icons/laravel.svg
 - title: CodeIgniter
   level: 4
   icon:
-  src: /icons/codeigniter.svg
+    src: /icons/codeigniter.svg
 - title: Django
   level: 3
   icon:
-  src: /icons/django.svg
+    src: /icons/django.svg
 - title: Angular
   level: 4
   icon:
-  src: /icons/angular.svg
+    src: /icons/angular.svg
 - title: ReactJS
   level: 4
   icon:
-  src: /icons/react.svg
+    src: /icons/react.svg
 - title: NextJS
   level: 3
   icon:
-  src: /icons/nextdotjs.svg
+    src: /icons/nextdotjs.svg
 - title: VueJS
   level: 3
   icon:
-  src: /icons/vuedotjs.svg
+    src: /icons/vuedotjs.svg
 - title: Ionic
   level: 4
   icon:
-  src: /icons/ionic.svg
+    src: /icons/ionic.svg
 - title: React Native
   level: 3
   icon:
-  src: /icons/react.svg
+    src: /icons/react.svg
 - title: Flutter
   level: 3
   icon:
-  src: /icons/flutter.svg
+    src: /icons/flutter.svg
 
 ---
 
@@ -97,27 +97,27 @@ list:
 - title: PHP
   level: 4
   icon:
-  src: /icons/php.svg
+    src: /icons/php.svg
 - title: Python
   level: 3
   icon:
-  src: /icons/python.svg
+    src: /icons/python.svg
 - title: Node.js
   level: 3
   icon:
-  src: /icons/nodedotjs.svg
+    src: /icons/nodedotjs.svg
 - title: Express js
   level: 3
   icon:
-  src: /icons/express.svg
+    src: /icons/express.svg
 - title: MySQL
   level: 4
   icon:
-  src: /icons/mysql.svg
+    src: /icons/mysql.svg
 - title: MongoDB
   level: 3
   icon:
-  src: /icons/mongodb.svg
+    src: /icons/mongodb.svg
 
 ---
 
@@ -133,39 +133,39 @@ list:
 - title: HTML
   level: 5
   icon:
-  src: /icons/html5.svg
+    src: /icons/html5.svg
 - title: CSS
   level: 5
   icon:
-  src: /icons/css3.svg
+    src: /icons/css3.svg
 - title: JavaScript
   level: 4
   icon:
-  src: /icons/javascript.svg
+    src: /icons/javascript.svg
 - title: Bootstrap
   level: 4
   icon:
-  src: /icons/bootstrap.svg
+    src: /icons/bootstrap.svg
 - title: Tailwind CSS
   level: 5
   icon:
-  src: /icons/tailwindcss.svg
+    src: /icons/tailwindcss.svg
 - title: jQuery
   level: 4
   icon:
-  src: /icons/jquery.svg
+    src: /icons/jquery.svg
 - title: Redux
   level: 3
   icon:
-  src: /icons/redux.svg
+    src: /icons/redux.svg
 - title: Webpack
   level: 3
   icon:
-  src: /icons/webpack.svg
+    src: /icons/webpack.svg
 - title: vite
   level: 3
   icon:
-  src: /icons/vite.svg
+    src: /icons/vite.svg
 
 ---
 
