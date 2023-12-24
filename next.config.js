@@ -3,8 +3,9 @@ const withBundleAnalyzer = require('@next/bundle-analyzer')({
 })
 
 module.exports = withBundleAnalyzer({
+  output: 'export',
   images: {
-    deviceSizes: [428, 540, 640, 768, 1024, 1120],
+    unoptimized: true,
   },
   eslint: {
     dirs: ['pages', 'components', 'lib', 'layouts', 'utils'],
