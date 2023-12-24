@@ -22,7 +22,8 @@ I am a highly motivated and results-oriented software developer with a strong wo
 
 I am available for full-time or contract work. Please contact me if you are interested in discussing my qualifications in more detail.
 
-## ---cta
+---cta
+---
 
 ## Ready to discuss your project?
 
