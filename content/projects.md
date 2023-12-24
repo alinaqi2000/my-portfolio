@@ -1,18 +1,20 @@
 ---
 layout: Projects
 seo:
-  title: Web Development Projects
-  description: Custom description for this page goes here
+  title: Ali Naqi Al-Musawi | Portfolio Showcase
+  description: Witness the prowess of my coding mastery. Dive into a collection of innovative projects spanning web applications, analytics, and hybrid mobile app development.
 ---
 
 ---github
 repositories:
-  - alinaqi2000/docile
-  - alinaqi2000/uniquo
-  - alinaqi2000/digidreamz
-  - alinaqi2000/Expenses-App-Java-Spring
-  - alinaqi2000/spot_check
-  - alinaqi2000/quickpaisa-app
+
+- alinaqi2000/docile
+- alinaqi2000/uniquo
+- alinaqi2000/digidreamz
+- alinaqi2000/Expenses-App-Java-Spring
+- alinaqi2000/spot_check
+- alinaqi2000/quickpaisa-app
+
 ---
 
 <PageTitle>
@@ -21,12 +23,11 @@ repositories:
 
 Discover my most popular open-source projects on Github.
 
-
-
 ---projects
 collection:
-  path: /projects
-  sortBy: date
+path: /projects
+sortBy: date
+
 ---
 
 <PageTitle>

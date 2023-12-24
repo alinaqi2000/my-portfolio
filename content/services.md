@@ -1,8 +1,8 @@
 ---
 layout: Services
 seo:
-  title: Web Development Services
-  description: Custom description for this page goes here
+  title:  Ali Naqi Al-Musawi | Software Services
+  description: Empower your business with bespoke web and mobile solutions. I offer expertise in web applications, analytics, and hybrid mobile app development. Let's shape success together.
 ---
 
 
