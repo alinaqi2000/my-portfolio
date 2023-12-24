@@ -1,7 +1,7 @@
 ---
 layout: Projects
 seo:
-  title: Ali Naqi Al-Musawi | Portfolio Showcase
+  title: Portfolio Showcase
   description: Witness the prowess of my coding mastery. Dive into a collection of innovative projects spanning web applications, analytics, and hybrid mobile app development.
 ---
 

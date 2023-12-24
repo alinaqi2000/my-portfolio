@@ -1,7 +1,7 @@
 ---
 layout: Services
 seo:
-  title:  Ali Naqi Al-Musawi | Software Services
+  title: Software Services
   description: Empower your business with bespoke web and mobile solutions. I offer expertise in web applications, analytics, and hybrid mobile app development. Let's shape success together.
 ---
 
