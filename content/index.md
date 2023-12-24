@@ -26,9 +26,9 @@ Crafting digital dreams into reality! As a passionate Software Developer, I blen
 ---achievements
 - number: 6+
   text: Years of experience
-- number: 60+
+- number: 100+
   text: Projects Completed
-- number: 5
+- number: 6
   text: OpenSource Libraries
 ---
 

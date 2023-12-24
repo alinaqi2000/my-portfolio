@@ -8,6 +8,8 @@ seo:
 ---github
 repositories:
   - alinaqi2000/docile
+  - alinaqi2000/uniquo
+  - alinaqi2000/digidreamz
   - alinaqi2000/Expenses-App-Java-Spring
   - alinaqi2000/spot_check
   - alinaqi2000/quickpaisa-app
