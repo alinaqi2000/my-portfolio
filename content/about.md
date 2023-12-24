@@ -9,7 +9,7 @@ seo:
 name: Ali Naqi Al-Musawi
 images:
 
-- src: /about2.png
+- src: /about4.jpg
   alt: my image
 
 ---
