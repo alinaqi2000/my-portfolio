@@ -42,6 +42,11 @@ list:
 - Backend Dev
 
 ---
+########################################
+
+### Skills
+
+########################################
 
 ---skills[0]
 title: Frameworks
@@ -55,10 +60,18 @@ list:
   level: 4
   icon:
     src: /icons/codeigniter.svg
+- title: Symfony
+  level: 3
+  icon:
+    src: /icons/symfony.svg
 - title: Django
   level: 3
   icon:
     src: /icons/django.svg
+- title: Flask
+  level: 3
+  icon:
+    src: /icons/flask.svg
 - title: Angular
   level: 4
   icon:
@@ -80,7 +93,7 @@ list:
   icon:
     src: /icons/ionic.svg
 - title: React Native
-  level: 3
+  level: 4
   icon:
     src: /icons/react.svg
 - title: Flutter
@@ -122,11 +135,6 @@ list:
 ---
 
 ---skills[2]
-########################################
-
-### Skills
-
-########################################
 title: Front-End
 list:
 
@@ -146,7 +154,7 @@ list:
   level: 4
   icon:
     src: /icons/bootstrap.svg
-- title: Tailwind CSS
+- title: Tailwind
   level: 5
   icon:
     src: /icons/tailwindcss.svg
@@ -162,11 +170,53 @@ list:
   level: 3
   icon:
     src: /icons/webpack.svg
-- title: vite
+- title: Vite
   level: 3
   icon:
     src: /icons/vite.svg
 
+---
+
+---skills[3]
+title: Other
+list:
+
+- title: Docker
+  level: 4
+  icon:
+    src: /icons/docker.svg
+- title: Nginx
+  level: 3
+  icon:
+    src: /icons/nginx.svg
+- title: cPanel
+  level: 4
+  icon:
+    src: /icons/cpanel.svg
+- title: Redis
+  level: 4
+  icon:
+    src: /icons/redis.svg
+- title: RabbitMQ
+  level: 2
+  icon:
+    src: /icons/rabbitmq.svg
+- title: Jenkins
+  level: 3
+  icon:
+    src: /icons/jenkins.svg
+- title: AWS
+  level: 4
+  icon:
+    src: /icons/amazonaws.svg
+- title: GCP
+  level: 3
+  icon:
+    src: /icons/googlecloud.svg
+- title: Azure
+  level: 3
+  icon:
+    src: /icons/microsoftazure.svg
 ---
 
 ---history[0]
@@ -188,7 +238,7 @@ list:
 
 - name: The University of Lahore
   description: Bachelor of Software Engineering (BS.SE)
-  date: 2019 - 2023
+  date: 2019 - 2024
 - name: Punjab Group Of Colleges
   description: F.Sc Pre-Engineering
   date: 2016 - 2018
