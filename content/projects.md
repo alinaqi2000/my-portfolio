@@ -10,10 +10,11 @@ repositories:
 
 - alinaqi2000/docile
 - alinaqi2000/uniquo
+- alinaqi2000/uniquo-server
 - alinaqi2000/digidreamz
-- alinaqi2000/Expenses-App-Java-Spring
 - alinaqi2000/spot_check
 - alinaqi2000/quickpaisa-app
+- alinaqi2000/expenses-api-spring-boot
 
 ---
 

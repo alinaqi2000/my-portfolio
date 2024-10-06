@@ -24,7 +24,7 @@ Crafting digital dreams into reality! As a passionate Software Developer, I blen
 
 
 ---achievements
-- number: 6+
+- number: 7+
   text: Years of experience
 - number: 100+
   text: Projects Completed
