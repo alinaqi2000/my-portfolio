@@ -43,7 +43,7 @@ const Image = (props) => {
       <NextImage
         onLoadingComplete={onLoadingComplete}
         className={classNames(
-          'md:transform-gpu md:transition-all md:duration-700',
+          'max-h-[718px] max-w-[500px] md:transform-gpu md:transition-all md:duration-700',
           !isLoaded && {
             'md:opacity-0': fx.fadeIn,
             'md:scale-150 md:will-change-transform': fx.zoomOut,

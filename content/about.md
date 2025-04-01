@@ -23,6 +23,7 @@ I am a highly motivated and results-oriented software developer with a strong wo
 I am available for full-time or contract work. Please contact me if you are interested in discussing my qualifications in more detail.
 
 ---cta
+
 ---
 
 ## Ready to discuss your project?
@@ -217,17 +218,21 @@ list:
   level: 3
   icon:
     src: /icons/microsoftazure.svg
+
 ---
 
 ---history[0]
 title: Employment
 list:
 
+- name: Next Basket
+  description: Senior Software Engineer
+  date: Apr 2024 - Present
 - name: Zairone Solutions
-  description: Full Stack Software Engineer
-  date: May 2019 - Present
+  description: Lead Software Engineer
+  date: Jun 2019 - Mar 2024
 - name: iBuildSoft
-  description: Full Stack Web Developer
+  description: Full Stack Software Developer
   date: Mar 2016 - May 2019
 
 ---

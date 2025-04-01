@@ -7,9 +7,9 @@ seo:
 
 ---main
 images:
-  - src: /hero.jpg
+  - src: /hero-2025.jpg
     alt: my photo
-  - src: /hero-mobile.jpg
+  - src: /hero-mobile-2025.jpg
     alt: my photo
 ---
 
@@ -19,7 +19,7 @@ images:
 
 <Sep size={12} />
 
-Crafting digital dreams into reality! As a passionate Software Developer, I blend innovation with expertise in Laravel, Angular, ReactJS, and more. From web applications to analytics, I'm your go-to architect for user-friendly solutions. Let's turn challenges into triumphs together!
+Bringing ideas to life through code! I thrive on turning complex challenges into elegant, user-friendly solutions, building robust platforms that deliver seamless digital experiences. Focused on impact and innovation, I create intuitive applications that make a difference. Let’s build something amazing together! 🚀
 
 
 
@@ -36,7 +36,7 @@ Crafting digital dreams into reality! As a passionate Software Developer, I blen
 
 ---cta
 ---
-<Button download="Ali_Resume" target="_blank" href="/cv/Ali_Resume.pdf" size="lg">
+<Button download="Ali_Resume_2025" target="_blank" href="/cv/Ali_Resume_2025.pdf" size="lg">
   Download Resume
 </Button>
 

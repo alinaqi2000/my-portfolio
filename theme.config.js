@@ -6,7 +6,8 @@
  * Icons from react-icons: https://react-icons.github.io/react-icons
  */
 
-import { IoLogoTwitter, IoLogoInstagram, IoLogoGithub, IoLogoLinkedin } from 'react-icons/io5'
+import { IoLogoInstagram, IoLogoGithub, IoLogoLinkedin } from 'react-icons/io5'
+import { FaSquareXTwitter } from "react-icons/fa6";
 import { TfiHome, TfiPencilAlt } from 'react-icons/tfi'
 import { SlUser, SlBriefcase, SlEnvolope, SlTrophy } from 'react-icons/sl'
 
@@ -78,9 +79,9 @@ export const social = [
     Icon: IoLogoGithub,
   },
   {
-    name: 'Twitter',
-    url: 'https://twitter.com/AliNaqi2000',
-    Icon: IoLogoTwitter,
+    name: 'X',
+    url: 'https://x.com/AliNaqi2000',
+    Icon: FaSquareXTwitter,
   },
   {
     name: 'LinkedIn',
