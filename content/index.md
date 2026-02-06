@@ -24,7 +24,7 @@ Bringing ideas to life through code! I thrive on turning complex challenges into
 
 
 ---achievements
-- number: 7+
+- number: 8+
   text: Years of experience
 - number: 100+
   text: Projects Completed
@@ -57,4 +57,5 @@ list:
   - name: Company 4
     icon:
       src: /icons/logo-4.svg
+
 ---
