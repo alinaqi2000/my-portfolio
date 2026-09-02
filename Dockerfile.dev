@@ -1,13 +1,12 @@
-FROM node:20-alpine
+FROM oven/bun:1-alpine
 
 WORKDIR /app
 
-# Copy package.json and package-lock.json
-COPY package.json package-lock.json* ./
+# Copy package.json and bun.lock
+COPY package.json bun.lock ./
 
-# Install dependencies
 RUN apk add --no-cache libc6-compat || (echo "Nameserver 8.8.8.8" > /etc/resolv.conf && apk add --no-cache libc6-compat)
-RUN npm i
+RUN bun install
 
 # Copy the rest of the application
 COPY . .
@@ -16,4 +15,4 @@ COPY . .
 EXPOSE 3000
 
 # Command to run the application
-CMD ["npm", "run", "dev"]
+CMD ["bun", "run", "dev"]
