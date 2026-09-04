@@ -1,0 +1,90 @@
+[
+  {
+    "legend": "Your contact information",
+    "columns": 3,
+    "fields": [
+      {
+        "type": "text",
+        "name": "first-name",
+        "placeholder": "First name",
+        "autoComplete": "given-name",
+        "required": true
+      },
+      {
+        "type": "text",
+        "name": "last-name",
+        "placeholder": "Last name",
+        "autoComplete": "family-name",
+        "required": true
+      },
+      {
+        "type": "text",
+        "name": "email",
+        "placeholder": "Email address",
+        "autoComplete": "email",
+        "inputType": "email",
+        "required": true
+      },
+      {
+        "type": "text",
+        "name": "company",
+        "placeholder": "Company Name",
+        "autoComplete": "company"
+      },
+      {
+        "type": "text",
+        "name": "phone",
+        "placeholder": "Phone Number",
+        "autoComplete": "phone"
+      }
+    ]
+  },
+  {
+    "legend": "What services do you need for your project?",
+    "columns": 3,
+    "fields": [
+      {
+        "type": "checkbox",
+        "name": "project-type[Website Development]",
+        "label": "Website Development"
+      },
+      {
+        "type": "checkbox",
+        "name": "project-type[Mobile App Development]",
+        "label": "Mobile App Development"
+      },
+      {
+        "type": "checkbox",
+        "name": "project-type[Back-end Development]",
+        "label": "Back-end Development"
+      },
+      {
+        "type": "checkbox",
+        "name": "project-type[E-commerce Site]",
+        "label": "E-commerce Site"
+      },
+      {
+        "type": "checkbox",
+        "name": "project-type[Social Media / SEO]",
+        "label": "Social Media / SEO"
+      },
+      {
+        "type": "checkbox",
+        "name": "project-type[Other]",
+        "label": "Other"
+      }
+    ]
+  },
+  {
+    "legend": "Tell me about your project",
+    "columns": 1,
+    "fields": [
+      {
+        "type": "textarea",
+        "name": "message",
+        "placeholder": "Project description",
+        "rows": 3
+      }
+    ]
+  }
+]

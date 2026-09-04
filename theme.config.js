@@ -7,7 +7,7 @@
  */
 
 import { IoLogoInstagram, IoLogoGithub, IoLogoLinkedin } from 'react-icons/io5'
-import { FaSquareXTwitter } from "react-icons/fa6";
+import { FaSquareXTwitter } from 'react-icons/fa6'
 import { TfiHome, TfiPencilAlt } from 'react-icons/tfi'
 import { SlUser, SlBriefcase, SlEnvolope, SlTrophy } from 'react-icons/sl'
 

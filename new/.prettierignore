@@ -1,0 +1,3 @@
+# Section-matter uses ---key delimiters that prettier reflows/breaks.
+# Never format MDX content files.
+content/
