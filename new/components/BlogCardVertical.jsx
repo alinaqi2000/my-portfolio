@@ -8,8 +8,8 @@ import Date from '@/components/Date'
 const BlogCardVertical = ({ className, title, images, slug, description, date, tags }) => (
   <div
     className={classNames(
-      'group flex h-full flex-col overflow-hidden rounded-lg border border-line bg-night-surface',
-      'transition-all duration-300 hover:-translate-y-1 hover:border-accent/50 hover:shadow-[0_16px_48px_-16px_rgba(0,0,0,0.8)]',
+      'group flex h-full flex-col overflow-hidden rounded-lg border glass-border glass',
+      'transition-all duration-300 hover:-translate-y-1 hover:border-accent/50 glass-hover hover:shadow-[0_16px_48px_-16px_rgba(0,0,0,0.8)]',
       className
     )}
   >
@@ -17,7 +17,7 @@ const BlogCardVertical = ({ className, title, images, slug, description, date, t
       <Link
         href={slug.join('/')}
         aria-label={title}
-        className="not-prose relative block aspect-w-16 aspect-h-9 w-full overflow-hidden border-b border-line"
+        className="not-prose relative block aspect-w-16 aspect-h-9 w-full overflow-hidden border-b glass-border"
       >
         <Image
           src={images[0].src}
@@ -43,7 +43,7 @@ const BlogCardVertical = ({ className, title, images, slug, description, date, t
       </Link>
       <small className="mb-4 line-clamp-3 text-ink-mute">{description}</small>
       {date && (
-        <div className="mt-auto flex items-center gap-2 border-t border-line pt-4">
+        <div className="mt-auto flex items-center gap-2 border-t glass-border pt-4">
           <span className="inline-block h-1.5 w-1.5 rounded-full bg-term-green" />
           <Date date={date} />
         </div>

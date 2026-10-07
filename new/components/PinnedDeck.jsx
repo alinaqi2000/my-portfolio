@@ -1,5 +1,4 @@
 import React from 'react'
-import BracesMark from '@/components/BracesMark'
 import SectionRail from '@/components/SectionRail'
 
 /**
@@ -107,11 +106,7 @@ const PinnedDeck = ({ sections }) => {
 
   return (
     <>
-      {/* Still background — shared by every section, never moves */}
-      <div className="pin-backdrop" aria-hidden="true">
-        <div className="bg-grid pin-backdrop__grid" />
-        <BracesMark />
-      </div>
+      {/* Background glows + grid now live in Layout (visible on all pages) */}
 
       <div ref={deckRef} className="pin-deck">
         {sections.map((s) => (

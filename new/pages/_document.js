@@ -7,8 +7,10 @@ class MyDocument extends Document {
       <Html lang={config.dateLocale} className="relative scroll-smooth antialiased">
         <Head>
           <meta name="theme-color" content="#0A0A0A" />
-          <link rel="icon" href="/laptop.png" type="image/png" />
-          <link rel="apple-touch-icon" href="/laptop.png" />
+          <link rel="icon" href="/favicon/favicon.ico" type="image/x-icon" />
+          <link rel="icon" href="/favicon/favicon-32.png" type="image/png" sizes="32x32" />
+          <link rel="icon" href="/favicon/favicon-16.png" type="image/png" sizes="16x16" />
+          <link rel="apple-touch-icon" href="/favicon/apple-touch-icon.png" />
           <link rel="manifest" href="/favicon/site.webmanifest" />
           <link rel="alternate" type="application/rss+xml" href="/feed/blog/feed.xml" />
           <script

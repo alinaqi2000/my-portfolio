@@ -21,7 +21,7 @@ images:
 
 <Sep size={12} />
 
-Bringing ideas to life through code! I thrive on turning complex challenges into elegant, user-friendly solutions, building robust platforms that deliver seamless digital experiences. Focused on impact and innovation, I create intuitive applications that make a difference. Let's build something amazing together! 🚀
+<p className="text-[16px]"> Bringing ideas to life through code! I thrive on turning complex challenges into elegant, user-friendly solutions, building robust platforms that deliver seamless digital experiences. Focused on impact and innovation, I create intuitive applications that make a difference. Let's build something amazing together! 🚀 </p>
 
 ---achievements
 

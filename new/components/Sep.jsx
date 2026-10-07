@@ -7,6 +7,7 @@ const Sep = (props) => {
   return (
     <div
       className={classNames(
+        'md:mx-[-25px]',
         {
           'h-px w-full bg-line': line === true,
           'my-3 md:my-6': size == 6,

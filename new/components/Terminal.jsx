@@ -6,29 +6,26 @@ import classNames from 'clsx'
  * The centerpiece visual of the design system: dark panel, traffic-light
  * dots, mono output with colored status lines.
  */
-const Terminal = ({
-  title = 'alinaqi@dev: ~',
-  sidebar,
-  children,
-  className,
-  bodyClassName,
-}) => (
-  <div className={classNames('terminal-window rounded-lg border border-line bg-night-surface', className)}>
+const Terminal = ({ title = 'alinaqi@dev: ~', sidebar, children, className, bodyClassName }) => (
+  <div
+    className={classNames(
+      'terminal-window glass-border glass rounded-lg border',
+      className
+    )}
+  >
     <div className="terminal-titlebar">
       <span className="terminal-dot bg-term-red" />
       <span className="terminal-dot bg-term-yellow" />
       <span className="terminal-dot bg-term-green" />
-      <span className="ml-3 truncate font-mono text-xs text-ink-faint">{title}</span>
+      <span className="text-ink-faint ml-3 truncate font-mono text-xs">{title}</span>
     </div>
     <div className={classNames('flex', bodyClassName)}>
       {sidebar && (
-        <div className="hidden w-44 shrink-0 flex-col gap-1 border-r border-line bg-night p-3 md:flex">
+        <div className="glass-border glass-subtle hidden w-44 shrink-0 flex-col gap-1 border-r p-3 md:flex">
           {sidebar}
         </div>
       )}
-      <div className="min-w-0 flex-1 p-4 font-mono text-sm leading-relaxed md:p-5">
-        {children}
-      </div>
+      <div className="min-w-0 flex-1 p-4 font-mono text-sm leading-relaxed md:p-5">{children}</div>
     </div>
   </div>
 )

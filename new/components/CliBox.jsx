@@ -23,7 +23,7 @@ const CliBox = ({ command, className, ...rest }) => {
     <div
       className={classNames(
         'flex max-w-xl items-center justify-between gap-4',
-        'rounded-md border border-line bg-night-inset p-3',
+        'rounded-md border glass-border glass-subtle p-3',
         className
       )}
       {...rest}

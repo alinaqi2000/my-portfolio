@@ -18,7 +18,7 @@ const FormCheckbox = React.forwardRef((props, ref) => {
         name={name}
         type={type}
         value={value}
-        className="h-5 w-5 rounded border-line bg-night-inset text-accent focus:ring-accent/40"
+        className="h-5 w-5 rounded glass-border glass-subtle text-accent focus:ring-accent/40"
         onChange={handleChange}
       />
       <label htmlFor={id || name} className="ml-3 block text-sm text-ink-mute">

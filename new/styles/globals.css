@@ -55,11 +55,44 @@
 }
 
 @layer utilities {
+  /* Real backdrop source behind card collections. Cards blur this layer. */
+  .glass-stage {
+    position: relative;
+    isolation: isolate;
+  }
+  .glass-stage > * {
+    position: relative;
+    z-index: 1;
+  }
+  /* Same dark translucent surface used by the Latest Projects cards. */
+  .glass,
+  .glass-subtle {
+    position: relative;
+    isolation: isolate;
+    overflow: hidden;
+    border-color: rgba(255, 255, 255, 0.08);
+  }
+  .glass {
+    background-color: rgba(12, 12, 18, 0.36);
+    -webkit-backdrop-filter: blur(30px) saturate(145%);
+    backdrop-filter: blur(30px) saturate(145%);
+  }
+  .glass-subtle {
+    background-color: rgba(12, 12, 18, 0.28);
+    -webkit-backdrop-filter: blur(22px) saturate(135%);
+    backdrop-filter: blur(22px) saturate(135%);
+  }
+  .glass-hover:hover {
+    background-color: rgba(255, 255, 255, 0.05);
+  }
+  .glass-border {
+    border-color: rgba(255, 255, 255, 0.08);
+  }
   .terminal-window {
-    @apply border-line bg-night-surface overflow-hidden rounded-lg border;
+    @apply glass overflow-hidden rounded-lg border;
   }
   .terminal-titlebar {
-    @apply border-line bg-night-raised flex items-center gap-2 border-b px-4 py-3;
+    @apply glass-subtle glass-border flex items-center gap-2 border-b px-4 py-3;
   }
   .terminal-dot {
     @apply h-2.5 w-2.5 rounded-full;
@@ -78,8 +111,8 @@
     @apply m-0 text-sm;
   }
   .bg-grid {
-    background-image: linear-gradient(to right, rgba(39, 39, 42, 0.35) 1px, transparent 1px),
-      linear-gradient(to bottom, rgba(39, 39, 42, 0.35) 1px, transparent 1px);
+    background-image: linear-gradient(to right, rgba(39, 39, 42, 0.5) 1px, transparent 1px),
+      linear-gradient(to bottom, rgba(39, 39, 42, 0.5) 1px, transparent 1px);
     background-size: 48px 48px;
   }
   .text-gradient-accent {
@@ -100,14 +133,19 @@
   @apply text-white;
 }
 .prose :where(code):not(:where([class~='not-prose'] *)) {
-  @apply border-line bg-night-inset text-term-green rounded border px-1.5 py-0.5;
+  @apply glass-subtle glass-border text-term-green rounded border px-1.5 py-0.5;
 }
 .prose :where(code)::before,
 .prose :where(code)::after {
   content: '';
 }
 .prose :where(pre):not(:where([class~='not-prose'] *)) {
-  @apply border-line bg-night-inset rounded-lg border;
+  @apply glass-subtle glass-border max-w-full overflow-x-auto rounded-lg border;
+}
+.prose table {
+  display: block;
+  max-width: 100%;
+  overflow-x: auto;
 }
 .prose :where(hr):not(:where([class~='not-prose'] *)) {
   @apply border-line;
@@ -170,6 +208,17 @@
   transform: none;
 }
 
+/* Glass surfaces must not wait for the reveal compositor transition.
+   Chrome otherwise delays backdrop-filter painting by the reveal duration. */
+.reveal:has(.glass),
+.reveal:has(.glass-subtle) {
+  opacity: 1 !important;
+  transform: none !important;
+  transition: none !important;
+  animation: none !important;
+  will-change: auto;
+}
+
 /* ==========================================================================
    BracesMark — the signature `{}` watermark (flat, as the original hero).
    Accent gradient fill + a proper 1px text-stroke border. No translucency.
@@ -186,7 +235,7 @@
   font-weight: 700;
   font-size: clamp(20rem, 44vw, 46rem);
   line-height: 1;
-  letter-spacing: -0.08em;
+  letter-spacing: 0.1em;
   user-select: none;
   pointer-events: none;
 }
@@ -194,22 +243,29 @@
   display: block;
   background: linear-gradient(
     160deg,
-    rgba(192, 132, 252, 0.16),
-    rgba(96, 165, 250, 0.1) 55%,
-    rgba(192, 132, 252, 0.04)
+    rgba(192, 132, 252, 0.28),
+    rgba(96, 165, 250, 0.18) 55%,
+    rgba(192, 132, 252, 0.08)
   );
   -webkit-background-clip: text;
   background-clip: text;
+  -webkit-text-fill-color: transparent;
   color: transparent;
-  -webkit-text-stroke: 1px rgba(192, 132, 252, 0.22);
+  -webkit-text-stroke: 1px rgba(192, 132, 252, 0.35);
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .braces-mark {
-    right: -14vw;
+    top: 42%;
+    right: -24vw;
+    font-size: clamp(13rem, 72vw, 23rem);
+    letter-spacing: 0;
+    transform: translateY(-50%) rotate(-8deg);
   }
   .braces-mark span {
-    background: linear-gradient(160deg, rgba(192, 132, 252, 0.1), rgba(96, 165, 250, 0.06) 60%);
-    -webkit-text-stroke-color: rgba(192, 132, 252, 0.16);
+    background: transparent;
+    -webkit-text-fill-color: rgba(192, 132, 252, 0.08);
+    color: rgba(192, 132, 252, 0.08);
+    -webkit-text-stroke-color: rgba(192, 132, 252, 0.24);
   }
 }
 
@@ -231,9 +287,9 @@ PinnedDeck — full-screen section deck (home page)
 .pin-backdrop__grid {
   position: absolute;
   inset: 0;
-  opacity: 0.3;
-  -webkit-mask-image: radial-gradient(ellipse at 55% 42%, black 25%, transparent 78%);
-  mask-image: radial-gradient(ellipse at 55% 42%, black 25%, transparent 78%);
+  opacity: 0.5;
+  -webkit-mask-image: radial-gradient(ellipse at 55% 42%, black 20%, transparent 80%);
+  mask-image: radial-gradient(ellipse at 55% 42%, black 20%, transparent 80%);
 }
 
 html.has-pin-deck {
@@ -376,7 +432,35 @@ html.has-pin-deck footer {
 }
 
 /* Mobile: solid tab attached to the right edge — overlap-proof */
+.page-rail {
+  display: none;
+}
 @media (max-width: 767px) {
+  .page-layout .mobile-menu-toggle,
+  .page-layout .mobile-menu {
+    display: none;
+  }
+  .page-layout main {
+    padding-top: 5.5rem;
+  }
+  .page-rail {
+    display: flex;
+    width: 8rem;
+    align-items: stretch;
+  }
+  .page-rail .rail-item {
+    width: 100%;
+    justify-content: space-between;
+  }
+  .page-rail .rail-label {
+    display: block;
+    color: #a1a1aa;
+    opacity: 1 !important;
+    transform: none !important;
+  }
+  .layout-accent {
+    display: none;
+  }
   .section-rail {
     top: auto;
     bottom: 1.1rem;

@@ -30,8 +30,8 @@ const RepositoryCard = (props) => {
       target="_blank"
       rel="noreferrer noopener"
       className={classNames(
-        'group flex h-full flex-col rounded-lg border border-line bg-night-surface no-underline',
-        'transition-all duration-300 hover:-translate-y-1 hover:border-accent/50 hover:shadow-[0_16px_48px_-16px_rgba(0,0,0,0.8)]',
+        'group flex h-full flex-col rounded-lg border glass-border glass no-underline',
+        'transition-all duration-300 hover:-translate-y-1 hover:border-accent/50 glass-hover hover:shadow-[0_16px_48px_-16px_rgba(0,0,0,0.8)]',
         className
       )}
     >
@@ -42,7 +42,7 @@ const RepositoryCard = (props) => {
         </h6>
         <p className="m-0 mt-2 text-sm text-ink-mute">{description}</p>
       </div>
-      <div className="mt-auto flex items-center justify-between border-t border-line px-5 py-3 font-mono text-xs text-ink-mute md:px-6">
+      <div className="mt-auto flex items-center justify-between border-t glass-border px-5 py-3 font-mono text-xs text-ink-mute md:px-6">
         <div className="flex items-center gap-2">
           {language && (
             <>

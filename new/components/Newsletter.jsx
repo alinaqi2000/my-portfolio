@@ -23,11 +23,11 @@ const ErrorMessage = ({ errors, name }) =>
   ) : null
 
 const SuccessMessage = ({ handleReset }) => (
-  <div className="my-6 mx-auto flex max-w-md justify-between rounded border border-line bg-night-surface p-3">
+  <div className="my-6 mx-auto flex max-w-md justify-between rounded border border-line glass-subtle p-3">
     <span className="font-mono text-sm text-term-green">
       ✔ Subscribed — please check your inbox and confirm your email.
     </span>
-    <button onClick={() => handleReset()} className="h-5 w-5 hover:bg-night-raised" aria-label="Dismiss">
+    <button onClick={() => handleReset()} className="h-5 w-5 hover:bg-white/[0.05]" aria-label="Dismiss">
       <IoClose className="mx-auto h-4 w-4 text-ink-faint" />
     </button>
   </div>

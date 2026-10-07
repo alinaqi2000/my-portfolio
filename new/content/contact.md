@@ -5,10 +5,12 @@ seo:
   description: Reach out to Ali Naqi Al-Musawi for collaborations and consultations. Elevate your digital ventures with me. Let's turn ideas into impactful solutions.
 ---
 
-## ---main
+---main
+
+---
 
 <PageTitle>
-  ### Get in touch
+  ### Get in touch&nbsp;
 
 ### _Let's talk about your project_
 

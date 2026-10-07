@@ -1,17 +1,15 @@
 import React from 'react'
-import dynamic from 'next/dynamic'
+import Link from 'next/link'
 import { ArticleJsonLd } from 'next-seo'
 import ContentRenderer from '@/components/ContentRenderer'
 import Image from '@/components/Image'
 import Tag from '@/components/Tag'
 import Date from '@/components/Date'
 import ImageGallery from '@/components/ImageGallery'
-import Sep from '@/components/Sep'
-import Newsletter from '@/components/Newsletter'
+import Reveal from '@/components/Reveal'
+import Button from '@/components/Button'
 import { siteMetaData } from '../theme.config'
-import authorImage from '../public/author-profile-picture.jpg'
-
-const SocialShare = dynamic(() => import('@/components/SocialShare'))
+import authorImage from '../public/dp.jpeg'
 
 const Layout = ({
   content,
@@ -37,19 +35,23 @@ const Layout = ({
         authorName={authorName}
         description={seo?.description || description}
       />
-      <div className="mx-auto w-full max-w-6xl px-6 py-16 md:py-20">
-        <div className="prose prose-invert">
-          <header className="mx-auto max-w-3xl space-y-8 text-center">
-            <div className="flex flex-wrap justify-center gap-1.5">
+      <div className="glass-stage mx-auto w-full max-w-7xl px-4 py-10 sm:px-6 sm:py-16 md:px-12 md:py-24">
+        {/* Header */}
+        <header className="mx-auto max-w-3xl pt-2 md:pt-0">
+          <Reveal animation="fade-in slide-in-bottom">
+            <div className="mb-6 flex flex-wrap gap-1.5">
               {tags?.map((tag) => (
                 <Tag key={tag.title} slug={tag.slug}>
                   {tag.title}
                 </Tag>
               ))}
             </div>
-            <h1 className="mb-0">{title}</h1>
-            <div className="not-prose mx-auto flex max-w-md items-center justify-center gap-4 rounded-lg border border-line bg-night-surface px-6 py-4">
-              <div className="h-12 w-12 shrink-0 overflow-hidden rounded-full border border-accent/50">
+            <h1 className="m-0 text-3xl md:text-5xl">{title}</h1>
+            {description && (
+              <p className="text-ink-mute mt-4 text-base md:text-lg">{description}</p>
+            )}
+            <div className="glass-border glass mt-8 flex items-center gap-4 rounded-lg border px-5 py-4">
+              <div className="h-11 w-11 shrink-0 overflow-hidden rounded-full border border-accent/50">
                 <Image
                   src={authorImage}
                   alt="Picture of the author"
@@ -64,48 +66,66 @@ const Layout = ({
                 <Date date={date} />
               </div>
             </div>
-          </header>
+          </Reveal>
+        </header>
 
-          {attributes.length > 0 && (
-            <div className="not-prose mt-12 overflow-hidden rounded-lg border border-line bg-night-surface">
+        {/* Metadata terminal */}
+        {attributes.length > 0 && (
+          <Reveal animation="fade-in" delay={100}>
+            <div className="glass-border glass mt-10 overflow-hidden rounded-lg border">
               <div className="terminal-titlebar">
                 <span className="terminal-dot bg-term-red" />
                 <span className="terminal-dot bg-term-yellow" />
                 <span className="terminal-dot bg-term-green" />
-                <span className="ml-3 font-mono text-xs text-ink-faint">metadata.json</span>
+                <span className="text-ink-faint ml-3 font-mono text-xs">metadata.json</span>
               </div>
-              <dl className="grid grid-cols-fluid gap-4 p-6 [--tw-fluid-col-min:8rem] md:px-10">
+              <dl className="grid grid-cols-1 gap-4 p-4 sm:grid-cols-2 md:grid-cols-4 md:px-8">
                 {attributes.map(({ label, value }) => (
                   <div key={label}>
-                    <dt className="mb-2 font-mono text-xs uppercase tracking-widest text-accent">
+                    <dt className="mb-1.5 font-mono text-[10px] uppercase tracking-widest text-accent">
                       {label}
                     </dt>
-                    <dd className="m-0 text-ink-mute">{value}</dd>
+                    <dd className="text-ink-mute m-0 text-sm">{value}</dd>
                   </div>
                 ))}
               </dl>
             </div>
-          )}
+          </Reveal>
+        )}
 
-          <div className="not-prose mt-10">
+        {/* Gallery */}
+        {images?.length > 0 && (
+          <div className="mt-10">
             <ImageGallery images={images} />
           </div>
+        )}
 
-          <div className="mt-10 grid gap-6 md:mt-14 md:grid-cols-[auto_3fr_auto] md:gap-0">
-            <div>
-              <SocialShare url={pageUrl} className="sticky left-10 top-24 z-10" />
-            </div>
-            <div className="prose prose-invert mx-auto max-w-prose prose-pre:max-w-[90vw]">
-              <ContentRenderer source={content} />
-            </div>
-          </div>
-
-          <Sep line className="my-20" />
-
-          <div className="mx-auto max-w-lg rounded-lg border border-line bg-night-surface p-8">
-            <Newsletter className="text-center" />
-          </div>
+        {/* Content */}
+        <div className="prose prose-invert mt-10 max-w-none break-words md:mt-16">
+          <ContentRenderer source={content} />
         </div>
+
+        {/* CTA — Hire me / Contact */}
+        <Reveal animation="fade-in slide-in-bottom" className="mt-16 md:mt-24">
+          <div className="glass-border glass relative overflow-hidden rounded-lg border p-6 text-center md:p-12">
+            <div className="text-term-green mb-3 font-mono text-xs uppercase tracking-[.2em]">
+              $ let&apos;s collaborate
+            </div>
+            <h3 className="m-0 text-xl md:text-2xl">Have a project in mind?</h3>
+            <p className="text-ink-mute mx-auto mt-3 max-w-md">
+              I&apos;m available for full-time positions and contract work. Let&apos;s turn your
+              ideas into impactful digital products.
+            </p>
+            <div className="mt-6 flex flex-wrap items-center justify-center gap-4">
+              <Button as={Link} href="/contact" size="md" variant="accent">
+                Start a conversation
+              </Button>
+              <Button as={Link} href="/projects" size="md" variant="ghost" showArrow>
+                View more work
+              </Button>
+            </div>
+          </div>
+        </Reveal>
       </div>
     </>
   )

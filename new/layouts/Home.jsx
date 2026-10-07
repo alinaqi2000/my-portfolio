@@ -117,7 +117,7 @@ const StackMarquee = () => (
 
 /* Tech stack — mirrors the about page's skill rows (icon + name + level dots) */
 const SkillRow = ({ title, icon, level = 0 }) => (
-  <div className="group/row hover:bg-night-inset flex items-center gap-3 rounded-md px-2 py-1.5 transition-colors duration-200">
+  <div className="group/row hover:bg-white/[0.04] flex items-center gap-3 rounded-md px-2 py-1.5 transition-colors duration-200">
     {icon && (
       <Icon
         {...icon}
@@ -160,7 +160,7 @@ const StackSection = ({ stack }) => {
   const current = groups[active] || groups[0]
 
   return (
-    <div className="mx-auto my-auto w-full max-w-6xl px-6 py-16 md:py-24">
+    <div className="mx-auto my-auto w-full max-w-7xl px-6 py-16 md:py-24">
       <SectionHeader
         title="Tech stack"
         lead="The tools I reach for every day — and how well I know them."
@@ -169,7 +169,7 @@ const StackSection = ({ stack }) => {
       />
 
       {/* Mobile: tab per group, one panel at a time */}
-      <div className="lg:hidden">
+      <div className="glass-stage lg:hidden">
         <div className="mb-4 flex gap-2 overflow-x-auto pb-1 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
           {groups.map((g, i) => (
             <button
@@ -180,7 +180,7 @@ const StackSection = ({ stack }) => {
                 'shrink-0 rounded-md border px-3 py-1.5 font-mono text-[11px] uppercase tracking-widest transition-colors duration-200',
                 i === active
                   ? 'border-accent/60 bg-accent/10 text-accent'
-                  : 'border-line bg-night-surface text-ink-mute hover:text-white'
+                  : 'glass-border glass text-ink-mute hover:text-white'
               )}
             >
               {g.title}
@@ -188,7 +188,7 @@ const StackSection = ({ stack }) => {
           ))}
         </div>
         {current && (
-          <div className="border-line bg-night-surface rounded-lg border p-3">
+          <div className="glass-border glass rounded-lg border p-3">
             <StackGroupHeader group={current} />
             <div className="flex flex-col">
               {current.skills?.map((skill) => (
@@ -200,14 +200,14 @@ const StackSection = ({ stack }) => {
       </div>
 
       {/* Desktop: all groups side by side */}
-      <div className="hidden gap-4 lg:grid lg:grid-cols-2">
+      <div className="glass-stage hidden gap-4 lg:grid lg:grid-cols-2">
         {groups.map((group) => (
           <Reveal
             key={group.title}
             animation="fade-in slide-in-top"
             delay={groups.indexOf(group) * 90}
           >
-            <div className="border-line bg-night-surface h-full rounded-lg border p-4 transition-colors duration-300 hover:border-accent/50 md:p-5">
+            <div className="glass-border glass h-full rounded-lg border p-4 transition-colors duration-300 hover:border-accent/50 glass-hover md:p-5">
               <StackGroupHeader group={group} />
               <div className="flex flex-col">
                 {group.skills?.map((skill) => (
@@ -238,11 +238,11 @@ const Layout = ({
       id: 'intro',
       label: 'Intro',
       content: (
-        <div className="relative mx-auto flex h-full w-full max-w-6xl flex-col px-6">
+        <div className="relative mx-auto flex h-full w-full max-w-7xl flex-col px-6">
           <div className="relative my-auto flex w-full flex-col pb-16 pt-16 sm:pb-24 sm:pt-20">
             <div className="grid items-center gap-8 lg:grid-cols-[1.15fr_.85fr] lg:gap-16">
               <Reveal animation="fade-in slide-in-right">
-                <Kicker label="Software Engineer" />
+                {/**   <Kicker label="Software Engineer" /> **/}
                 <div className="hero-content prose prose-invert max-w-3xl">
                   <ContentRenderer source={main} />
                 </div>
@@ -281,7 +281,7 @@ const Layout = ({
       id: 'projects',
       label: 'Projects',
       content: (
-        <div className="mx-auto my-auto w-full max-w-6xl px-6 py-16 md:py-24">
+        <div className="mx-auto my-auto w-full max-w-7xl px-6 py-16 md:py-24">
           <SectionHeader
             title="Top projects"
             lead="Ideas transformed into remarkable digital products."
@@ -289,7 +289,7 @@ const Layout = ({
             linkLabel="All projects"
           />
           {/* Mobile: horizontal snap carousel of every project */}
-          <div className="-mx-6 flex snap-x snap-mandatory gap-4 overflow-x-auto px-6 pb-3 [scrollbar-width:none] md:mx-0 md:grid md:grid-cols-2 md:gap-6 md:overflow-visible md:px-0 md:pb-0 [&::-webkit-scrollbar]:hidden">
+          <div className="glass-stage -mx-6 flex snap-x snap-mandatory gap-4 overflow-x-auto px-6 pb-3 [scrollbar-width:none] md:mx-0 md:grid md:grid-cols-2 md:gap-6 md:overflow-visible md:px-0 md:pb-0 [&::-webkit-scrollbar]:hidden">
             {projectRecords.map((item, i) => (
               <Reveal
                 key={item.slug.join('/')}
@@ -325,17 +325,17 @@ const Layout = ({
       id: 'services',
       label: 'Services',
       content: (
-        <div className="mx-auto my-auto w-full max-w-6xl px-6 py-16 md:py-24">
+        <div className="mx-auto my-auto w-full max-w-7xl px-6 py-16 md:py-24">
           <SectionHeader
             title="What I do"
             lead="From concept to deployment — everything you need to ship a product."
             href="/services"
             linkLabel="All services"
           />
-          <div className="grid grid-cols-1 gap-3 sm:grid-cols-2 md:gap-4 lg:grid-cols-3">
+          <div className="glass-stage grid grid-cols-1 gap-3 sm:grid-cols-2 md:gap-4 lg:grid-cols-3">
             {services?.map((item, i) => (
               <Reveal key={i} animation="fade-in slide-in-top" delay={i * 80}>
-                <div className="border-line bg-night-surface h-full rounded-lg border p-4 transition-colors duration-300 hover:border-accent/50 md:p-5">
+                <div className="glass-border glass h-full rounded-lg border p-4 transition-colors duration-300 hover:border-accent/50 glass-hover md:p-5">
                   <div className="flex items-center gap-2.5">
                     {item.icon && (
                       <Icon
@@ -355,7 +355,7 @@ const Layout = ({
             <Reveal animation="fade-in slide-in-top" delay={(services?.length || 0) * 80}>
               <Link
                 href="/contact"
-                className="group flex h-full flex-col justify-between rounded-lg border border-accent/40 bg-gradient-to-br from-accent/10 to-transparent p-4 no-underline transition-colors duration-300 hover:border-accent md:p-5"
+                className="group glass-border glass flex h-full flex-col justify-between rounded-lg border border-accent/40 p-4 no-underline transition-colors duration-300 hover:border-accent glass-hover md:p-5"
               >
                 <span className="font-mono text-[11px] uppercase tracking-widest text-accent">
                   $ start --project
@@ -376,7 +376,7 @@ const Layout = ({
       id: 'contact',
       label: 'Contact',
       content: (
-        <div className="mx-auto my-auto flex w-full max-w-6xl flex-col items-center px-6 py-16 text-center md:py-24">
+        <div className="mx-auto my-auto flex w-full max-w-7xl flex-col items-center px-6 py-16 text-center md:py-24">
           <Reveal animation="fade-in zoom-in" className="flex flex-col items-center">
             <div className="text-ink-faint mb-5 font-mono text-xs uppercase tracking-[.2em] md:mb-6">
               contact

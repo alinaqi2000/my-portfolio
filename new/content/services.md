@@ -30,7 +30,7 @@ Elevate your brand with my comprehensive suite of services, from cutting-edge gr
 
 <Sep size="12" />
 
-<Button href="/contact" variant="white" size="sm">
+<Button href="/contact" variant="accent" size="sm">
   Get Free Price Quote
 </Button>
 

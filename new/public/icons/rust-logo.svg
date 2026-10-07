@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" width="256" height="256">
+  <defs>
+    <linearGradient id="rust-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#CE422B"/>
+      <stop offset="100%" stop-color="#B7410E"/>
+    </linearGradient>
+  </defs>
+  <path fill="url(#rust-grad)" d="M128 0C57.2 0 0 57.2 0 128s57.2 128 128 128 128-57.2 128-128S198.8 0 128 0zm0 24c57.5 0 104 46.5 104 104s-46.5 104-104 104S24 185.5 24 128 70.5 24 128 24z"/>
+  <path fill="url(#rust-grad)" d="M128 40a88 88 0 1 0 0 176 88 88 0 0 0 0-176zm0 16a72 72 0 1 1 0 144 72 72 0 0 1 0-144z"/>
+  <text x="128" y="148" font-family="monospace" font-size="80" font-weight="bold" fill="url(#rust-grad)" text-anchor="middle">R</text>
+</svg>

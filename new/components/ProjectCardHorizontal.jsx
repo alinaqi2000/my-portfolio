@@ -5,8 +5,8 @@ import Icon from '@/components/Icon'
 import Tag from '@/components/Tag'
 
 const ProjectCardHorizontal = ({ title, logo, images, slug, tags, description, attributes, index }) => (
-  <article className="group overflow-hidden rounded-lg border border-line bg-night-surface transition-all duration-300 hover:-translate-y-1 hover:border-accent/50 hover:shadow-[0_16px_48px_-16px_rgba(0,0,0,0.8)]">
-    <Link href={slug.join('/')} aria-label={`View ${title}`} className="not-prose relative block aspect-[16/9] overflow-hidden border-b border-line bg-night-inset">
+  <article className="group overflow-hidden rounded-lg border glass-border glass transition-all duration-300 hover:-translate-y-1 hover:border-accent/50 glass-hover hover:shadow-[0_16px_48px_-16px_rgba(0,0,0,0.8)]">
+    <Link href={slug.join('/')} aria-label={`View ${title}`} className="not-prose relative block aspect-[16/9] overflow-hidden border-b glass-border bg-black/30">
       {images?.[0] && (
         <Image
           src={images[0].src}
@@ -32,7 +32,7 @@ const ProjectCardHorizontal = ({ title, logo, images, slug, tags, description, a
           />
         </div>
       )}
-      <span className="absolute bottom-3 left-3 rounded bg-night/90 px-2 py-1 font-mono text-xs text-term-green opacity-0 transition-opacity group-hover:opacity-100">
+      <span className="absolute bottom-3 left-3 rounded bg-black/60 px-2 py-1 font-mono text-xs text-term-green opacity-0 backdrop-blur-sm transition-opacity group-hover:opacity-100">
         view project -&gt;
       </span>
     </Link>
@@ -55,7 +55,7 @@ const ProjectCardHorizontal = ({ title, logo, images, slug, tags, description, a
         </div>
       )}
       {attributes && Array.isArray(attributes) && (
-        <dl className="mt-5 flex flex-wrap gap-x-8 border-t border-line pt-4">
+        <dl className="mt-5 flex flex-wrap gap-x-8 border-t glass-border pt-4">
           {attributes.map(({ label, value }) => (
             <div key={label}>
               <dt className="font-mono text-[10px] uppercase tracking-widest text-ink-faint">{label}</dt>

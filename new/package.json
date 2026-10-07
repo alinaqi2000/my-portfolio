@@ -7,8 +7,8 @@
     "node": ">=14.0"
   },
   "scripts": {
-    "dev": "next-remote-watch ./content/**/*.md",
-    "start": "next start",
+    "dev": "PORT=3009 next-remote-watch ./content/**/*.md",
+    "start": "next start -p 3009",
     "lint": "next lint",
     "build": "next build",
     "postbuild": "next-sitemap"

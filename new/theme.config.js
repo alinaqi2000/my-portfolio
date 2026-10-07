@@ -109,7 +109,7 @@ export const mdxConfig = {
 
 export const siteMetaData = {
   siteUrl: SITE_URL,
-  authorName: 'Ali Naqi',
+  authorName: 'Ali Naqi Al-Musawi',
   siteName: 'Ali Naqi',
   defaultTitle: 'Ali Naqi — Software Engineer',
   titleTemplate: 'Ali Naqi | %s',

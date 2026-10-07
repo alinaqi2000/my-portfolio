@@ -16,7 +16,7 @@ const Button = ({ as = 'button', className, children, ...props }) => {
   return (
     <Component
       className={classNames(
-        'bg-night-raised p-2 text-white shadow-lg hover:text-accent',
+        'glass-subtle p-2 text-white shadow-lg hover:text-accent',
         'hover:bg-black active:bg-accent active:text-black',
         className
       )}
@@ -95,7 +95,7 @@ const ImageGallery = (props) => {
           onClick={() => setActiveIndex(0)}
           className={classNames(
             'flex cursor-pointer items-center justify-center rounded-lg',
-            'border border-line bg-night-surface hover:border-accent/60'
+            'border glass-border glass-subtle hover:border-accent/60'
           )}
         >
           <h6 className="m-0 font-mono text-ink-faint">+{images.length - thumbsToShow}</h6>

@@ -22,8 +22,8 @@ const Navbar = () => {
   return (
     <header
       className={classNames(
-        'fixed left-1/2 top-0 z-50 w-full max-w-6xl -translate-x-1/2 border-b border-l border-r transition-colors duration-300',
-        scrolled || isOpen ? 'border-line bg-night' : 'border-transparent bg-transparent'
+        'border-line fixed left-1/2 top-0 z-50 w-full max-w-7xl -translate-x-1/2 border-b border-l border-r transition-colors duration-300',
+        scrolled || isOpen ? 'bg-night' : 'bg-transparent'
       )}
     >
       <div className="flex h-16 items-center justify-between px-6">
@@ -33,7 +33,7 @@ const Navbar = () => {
           aria-label="Home"
           onClick={closeMenu}
         >
-          <span className="border-line bg-night-surface flex h-7 w-7 items-center justify-center rounded border text-accent transition-colors group-hover:border-accent/60">
+          <span className="glass-border glass-subtle flex h-7 w-7 items-center justify-center rounded border text-accent transition-colors group-hover:border-accent/60">
             /_
           </span>
           <span>
@@ -53,13 +53,20 @@ const Navbar = () => {
               {item.name}
             </ActiveLink>
           ))}
-          <Button as={Link} href="/contact" size="xs" showArrow={false} className="px-4">
+          <Button
+            as={Link}
+            href="/contact"
+            size="xs"
+            showArrow={false}
+            className="px-4"
+            variant="accent"
+          >
             Hire Me
           </Button>
         </nav>
 
         <button
-          className="text-ink-mute flex h-11 w-11 items-center justify-center hover:text-white md:hidden"
+          className="mobile-menu-toggle text-ink-mute flex h-11 w-11 items-center justify-center hover:text-white md:hidden"
           onClick={() => setIsOpen((open) => !open)}
           aria-label={isOpen ? 'Close menu' : 'Open menu'}
           aria-expanded={isOpen}
@@ -71,7 +78,7 @@ const Navbar = () => {
       {/* Mobile menu */}
       <div
         className={classNames(
-          'border-line bg-night overflow-hidden border-t transition-[max-height] duration-300 md:hidden',
+          'mobile-menu border-line bg-night overflow-hidden border-t transition-[max-height] duration-300 md:hidden',
           isOpen ? 'max-h-96' : 'max-h-0 border-t-0'
         )}
       >

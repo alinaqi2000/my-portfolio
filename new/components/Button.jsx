@@ -50,7 +50,7 @@ const Button = React.forwardRef((props, ref) => {
           'bg-purple-300 text-black shadow-[0_1px_0_rgba(255,255,255,0.2)_inset] hover:bg-zinc-200':
             variant === 'primary' || variant === 'white',
           // accent — solid purple, glow on hover
-          'hover:bg-accent-dim bg-accent !text-gray-800 hover:shadow-[0_0_28px_rgba(192,132,252,0.35)]':
+          'hover:bg-accent-dim bg-accent/90 !text-gray-800 hover:shadow-[0_0_28px_rgba(192,132,252,0.35)]':
             variant === 'accent',
           // outline — hairline that lights up
           'border-line border bg-transparent text-black hover:border-accent/60 hover:text-accent':

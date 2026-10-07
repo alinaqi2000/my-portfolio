@@ -12,7 +12,7 @@ const Tag = (props) => {
   return (
     <Component
       className={classNames(
-        'inline-block select-none rounded border border-line bg-night-surface px-2.5 py-1',
+        'inline-block select-none rounded border glass-border glass-subtle px-2.5 py-1',
         'font-mono text-xs text-term-orange no-underline',
         isLinked && 'transition-colors hover:border-accent/60 hover:text-accent',
         className

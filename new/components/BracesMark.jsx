@@ -10,7 +10,7 @@ import classNames from 'clsx'
  */
 const BracesMark = ({ className }) => (
   <div className={classNames('braces-mark', className)} aria-hidden="true">
-    <span>{'{ }'}</span>
+    <span>{'{}'}</span>
   </div>
 )
 

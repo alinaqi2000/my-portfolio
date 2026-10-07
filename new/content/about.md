@@ -30,7 +30,7 @@ I am available for full-time or contract work. Please contact me if you are inte
 
 Let's super-charge your business today!
 
-<Button href="/contact">
+<Button href="/contact" variant="accent">
   Get a Free Price Quote
 </Button>
 

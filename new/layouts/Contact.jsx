@@ -81,15 +81,15 @@ const Contact01 = ({ main = {} }) => {
   }, [isValidating, errors.service, clearErrors])
 
   return (
-    <div className="mx-auto w-full max-w-6xl px-6 py-16 md:py-20">
+    <div className="mx-auto w-full max-w-7xl px-6 py-16 md:py-20">
       <div className="items-start gap-12 lg:flex">
         <Reveal animation="fade-in slide-in-right" className="prose prose-invert basis-1/3 lg:mr-6">
           <ContentRenderer source={main} />
         </Reveal>
-        <Reveal animation="fade-in zoom-in" className="mt-12 max-w-3xl lg:mt-0 lg:flex-1">
+        <Reveal animation="fade-in zoom-in" className="glass-stage mt-12 max-w-3xl lg:mt-0 lg:flex-1">
           <FormProvider {...methods}>
             <form onSubmit={handleSubmit(onSubmit)}>
-              <div className="border-line relative overflow-hidden rounded-lg border shadow-2xl shadow-black/50">
+              <div className="glass-border glass relative overflow-hidden rounded-lg border shadow-2xl shadow-black/50">
                 {isSubmitSuccessful && <SuccessMessage />}
                 <div className="terminal-titlebar">
                   <span className="terminal-dot bg-term-red" />
@@ -99,10 +99,10 @@ const Contact01 = ({ main = {} }) => {
                     $ new-message --to alinaqi
                   </span>
                 </div>
-                <div className="bg-night-surface">
+                <div className="glass-subtle">
                   {inputs?.map(({ legend, columns, fields }, i) => (
                     <fieldset key={i} className="border-line border-b border-dashed">
-                      <div className="bg-night-inset p-4">
+                      <div className="glass-subtle p-4">
                         <legend className="text-term-orange m-0 p-0 font-mono text-xs uppercase tracking-widest">
                           {legend}
                         </legend>
@@ -125,7 +125,7 @@ const Contact01 = ({ main = {} }) => {
                     </fieldset>
                   ))}
                 </div>
-                <div className="bg-night-raised px-5 pb-8 pt-6 text-left">
+                <div className="glass-subtle px-5 pb-8 pt-6 text-left">
                   <ErrorMessage errors={errors} name="service" />
                   <Button
                     as="button"
