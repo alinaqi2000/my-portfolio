@@ -93,9 +93,9 @@ icon:
 
 ---projects
 collection:
-path: /projects
-sortBy: date
-limit: 6
+  path: /projects
+  sortBy: date
+  limit: 6
 
 ---
 
